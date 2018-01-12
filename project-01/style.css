@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: grey;
+    vertical-align: baseline;
+    line-height: 1;    
+}
+
+/* Project Typography */
+body {
+    font-size: 16px;
+    font-family: 'Raleway Light', Arial, sans-serif;
+    color: #2d2d2d;
+}
+
+.producttype, .price {
+    color: #969696;
+}
+
+.wordlinks a,
+.carousel h3 {
+    color: #e2574c;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+/* Top banner NAV links */
+main {
+    min-height: 50px;
+    min-width: 400px; /* NDA */
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 50px;}
+    
+main ul {
+        padding: 0;
+        list-style: none;}
+.twitter {
+    display: flex;}
+.twitter_bird {
+    margin-left: auto;
+    margin-right: auto}
+
+/* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
+
+.top-nav {
+    min-height: 30px;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #d7d7d7;
+   /* is making this section flex necessary? */
+}
+
+.top-nav-stuff {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border: 3px dotted rgb(138, 102, 102);
+}
+
+.navcontainer {
+    align-self: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: 3px dotted black;
+}
+
+.logo img {
+    width: 100px;
+    border: 3px dotted black;
+}
+
+.cart img {
+    width: 50px;
+    border: 3px dotted black;
+}
+
+.navcontainer ul {  
+    margin: 0;
+    padding: 10px 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navcontainer ul li {
+    display: inline;
+}
+
+.navcontainer ul li a {
+    text-decoration: none;
+    padding: .2em 1.5em;
+    background-color: white;
+}
+
+.navcontainer ul li a:hover {
+    color: #b64036;
+    background-color: white;
+}
+
+li:nth-child(2) {
+    color: pink;
+}
+
+/* Header Girl Banner */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically aligns items */
+    align-items: center; /* horizontally aligns items */
+    min-height: 500px;
+    background-image: url(images/flower-bkgd.jpg);
+    background-size: contain, cover;
+    position: relative;
+}
+
+header h2 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+header img {
+    margin:auto; /* Required */
+    position: absolute; /* Required */
+    bottom:0; /* Aligns at the bottom */
+    left:0;
+    right:0; /* Aligns horizontal center */
+    max-height:100%; /* images bigger than container */
+    max-width:100%;  /* will be shrinked to size */ 
+}
+
+/* Section1 WORDS two lines */
+.section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically aligns items */
+    align-items: center; /* horizontally aligns items */
+    background: orange;
+}
+
+.section1 h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.section1 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 6 boxes flexbox */
+.shop-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.shop-grid-container {
+    background: green;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    border: 5px darkgoldenrod dotted;
+    max-width: 65vw;
+}
+
+.shopgriditem {
+    border: 2px solid #fff;
+}
+
+.larger {
+    width: 30vw;
+    height: 15vw;  
+}
+
+.smaller {
+    width: 15vw;
+    height: 15vw;
+}
+
+
+.mens {
+    background-image: url(images/mens-category.jpg);
+    background-size: cover;
+}
+
+.womens {
+    background-image: url(images/womens-category.jpg);
+    background-size: cover;
+}
+.trends {
+    background-image: url(images/trends-category.jpg);
+    background-size: cover;
+}
+.glasses {
+    background-image: url(images/glasses-category.jpg);
+    background-size: cover;
+}
+.sale {
+    background-image: url(images/sale-category.jpg);
+    background-size: cover;
+}
+.bags {
+    background-image: url(images/bags-category.jpg);
+    background-size: cover;
+}
+
+.shopgriditem {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* /* Section3 Carousel  */
+.section3carousel {
+    min-height: 650px;
+    background: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3carousel .container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+/* section4 Sign Up Newsletter */
+.section4signup {
+    min-height: 350px;
+    background: url(images/wave-bkgd.jpg) no-repeat bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4signup .container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+} 
+
+.section4signup .container h2 {
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+
+.section4signup .container h2 {
+    font-family: 'Playfair Disolay';
+    color: white;
+}
+.section4signup .container p {
+    color: pink;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+
+/* Footer bottom */
+
+footer {
+    background: #242424;
+    padding: 4em 10em;
+}
+
+footer .container {
+    color: white;
+    font-family: Playfair Display, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px blue dotted;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.copyright, .phone {
+    margin-bottom: 1em;
+}
+
+.address {
+    color: #969696;
+}
+
+.social-media {
+    font-size: 1em;
+    margin-right: 4em;
+    line-height: 2;
+}
+
+.socialmedianame {
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #b64036;
+}
+
+footer i {
+    width: 2em;
+}
+
+
+
+
+/*end of color coding sections and heights */
+
+
+
+
