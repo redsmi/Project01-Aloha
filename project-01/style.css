@@ -52,9 +52,13 @@ main ul {
 /* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
 
 .top-nav {
-    min-height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    min-height: 14vh;
     background-color: white;
-    padding: 10px 20px;
     border-bottom: 1px solid #d7d7d7;
    /* is making this section flex necessary? */
 }
@@ -64,6 +68,7 @@ main ul {
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    padding: 15px 150px;
     border: 3px dotted rgb(138, 102, 102);
 }
 
@@ -75,12 +80,12 @@ main ul {
 }
 
 .logo img {
-    width: 100px;
+    width: 150px;
     border: 3px dotted black;
 }
 
 .cart img {
-    width: 50px;
+    width: 60px;
     border: 3px dotted black;
 }
 
@@ -121,10 +126,12 @@ header {
     background-image: url(images/flower-bkgd.jpg);
     background-size: contain, cover;
     position: relative;
+    margin-top: 14vh;
 }
 
 header h2 {
     font-size: 80px;
+    font-family: 'Playfare Display', serif;
     color: white;
     text-align: center;
 }
@@ -261,7 +268,7 @@ header img {
 }
 
 .section4signup .container h2 {
-    font-family: 'Playfair Disolay';
+    font-family: 'Playfair Display';
     color: white;
 }
 .section4signup .container p {
@@ -280,7 +287,7 @@ footer {
 
 footer .container {
     color: white;
-    font-family: Playfair Display, serif;
+    font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
