@@ -6,3 +6,15 @@ $('.main-carousel').flickity({
     contain: true
   });
   
+    $("#section4signup").on("submit",function(){
+    var emailSub;
+    emailSub = $('input').val();
+    console.log(emailSub);
+
+    if ($("#your-email").val() == "") {
+      alert("Please submit a valid email address.");
+      return false;
+    } else {
+      alert("Thanks for subscribing!");
+    }
+  });
