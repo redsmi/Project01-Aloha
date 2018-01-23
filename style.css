@@ -1,0 +1,1299 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background: grey;
+    vertical-align: baseline;
+}
+
+/* Project Typography */
+    body {
+        font-size: 16px;
+        font-family: 'Raleway Light', Arial, sans-serif;
+        color: #2d2d2d;
+        line-height: 1;    
+    }
+
+    h1, 
+    h2, /* Banner, 'Hand Crafted Styles', 'Most Loved Products', 'Sign Up for Updates'*/
+    h3 {
+        font-family: 'Playfair Display', Arial, sans-serif;
+        line-height: 1; 
+    }
+
+    .producttype,  /* also Footer class=address */
+    .price {
+        color: #969696;
+    }
+
+    .wordlinks a,
+    .carousel-cell h3 {
+        color: #e2574c;
+    }
+
+/* Top: Logo Nav Cart */
+    .top-nav {
+        background-color: white;
+        border-bottom: 1px solid #d7d7d7;
+        box-shadow: 1px 1px 6px 0px hsla(0, 0%, 39%, .25);
+        /* box-shadow: h-offset v-offset blur spread color */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .top-nav-stuff {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0.75rem;/* ADJUSTED THIS */
+        /* border: 3px dotted rgb(184, 57, 163); temporary */
+    }
+
+    .navcontainer { /* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
+        align-self: center;
+        display: inline-block;
+        vertical-align: middle;
+        order: 2;
+        flex-basis: 60%;
+    }
+
+    .logo {
+        order: 1;
+        flex-basis: 20%;
+    }
+
+    .logo img {
+        width: 125px;/* ADJUSTED THIS */
+    }
+
+    .cart {
+        text-align: right;
+        order: 3;
+        flex-basis: 20%;
+    }
+
+    .cart img {
+        width: 50px;/* ADJUSTED THIS */
+    }
+
+    .navcontainer ul {  
+        margin: 0;
+        /* padding: 0.5rem 0.5rem; *//* ADJUSTED THIS */
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .navcontainer ul li {
+        display: inline;
+    }
+
+    .navcontainer ul li a {
+        text-decoration: none;
+        padding: .2em 1em;
+        background-color: rgb(255, 255, 255);
+        font-size: 0.8rem;/* ADJUSTED THIS */
+    }
+
+    .navcontainer ul li a:hover {
+        color: #b64036;
+        background-color: white;
+    }
+
+/* Banner / Current Title  */
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 350px; /* trial and error + feel *//* ADJUSTED THIS */
+        margin-top: 70px; /* based on header, prevent overlap *//* ADJUSTED THIS */
+        /* background flowers + girl */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl.png), url(images/flower-bkgd.jpg) ;
+        background-position: center, center 2rem, top; /* girl trial and error *//* ADJUSTED THIS */
+        background-repeat: no-repeat, no-repeat, repeat-x;
+        background-size: contain, 150px, contain; /* girl trial and error *//* ADJUSTED THIS */
+    }       
+
+    .banner h2 {
+        font-size: 1.3rem;
+        font-family: 'Railway Web' ;
+        line-height: 4rem;
+        color: white;
+        text-shadow: 2px 2px 2px grey;
+        z-index: 1;
+    }
+
+    .banner h2 span {
+        font-size: 3rem;/* ADJUSTED THIS */
+        font-family: 'Playfair Display';
+        color: white;
+    }
+
+/* Section1 Hand-Crafted Styles */
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        background: white;
+    }
+
+    .section1-stuff {
+        max-width: 720px;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    #section1 h2 span{
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    #section1 p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+/* Shop Grid flexbox */
+    #shop-grid {
+        background: green;
+    }
+
+    .shop-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* not working */
+        align-items: center; /* not working */
+        /* border: 5px darkgoldenrod dotted; temporary */
+    }
+
+    .shopgriditem {
+        border: 4px solid #fff;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        color: white;
+        font-size: 2.25rem;
+        font-weight: 500;
+    }
+
+    .larger {
+        width: 100vw;
+        height: 50vw;
+        flex: 2 0 100%; 
+        /*flex: grow shrink basis  */      
+    }
+
+    .smaller {
+        width: 50vw;
+        height: 50vw;
+        flex: 1 0 50%;  
+    }
+
+    .carousel-cell {
+        width: 100%;
+    }
+
+    .shop-grid-container div:nth-child(1) {
+        border-left: none;
+    }
+
+    .shop-grid-container div:nth-child(6) {
+        border-right: none;
+    }
+
+    .shop-grid-container div:nth-child(3) {
+        border-right: none;
+    }
+
+    .shop-grid-container div:nth-child(4) {
+        border-left: none;
+    }
+
+    .mens {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/mens-category.jpg);
+        background-size: cover;
+    }
+
+    .womens {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/womens-category.jpg);
+        background-size: cover;
+    }
+    .trends {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/trends-category.jpg);
+        background-size: cover;
+    }
+    .glasses {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/glasses-category.jpg);
+        background-size: cover;
+    }
+    .sale {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/sale-category.jpg);
+        background-size: cover;
+    }
+    .bags {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/bags-category.jpg);
+        background-size: cover;
+    }
+
+/* Section3 Carousel  */
+    #section3carousel {
+        min-height: 650px;
+        background: white;
+        /* don't use flexbox when using flickity */
+    }
+
+    .carousel-container {
+        max-width: 1240px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    #section3carousel h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #section3carousel h2 span {
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .carousel-container .main-carousel {
+        max-width: 1240px;
+        padding-bottom: 1rem;
+    }
+
+    .carousel-cell h3,
+    .producttype,
+    .price {
+        margin-bottom: 1.25rem;
+    }
+
+    .carousel-cell h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        border-radius: 25px;
+        border-style: none;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1rem;   
+    }
+
+/* section4 Sign Up Newsletter */
+    #section4signup {
+        min-height: 350px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/wave-bkgd.jpg) no-repeat bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section4signup .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 720px;
+        color: white;
+    } 
+
+    #section4signup .container h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 2px grey;
+    }
+
+    .sign-up-form {
+        position: relative; 
+    }
+
+    #section4signup .container h2 span {
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    #section4signup .container h2 {
+        font-family: 'Playfair Display';
+        width: 85%;
+    }
+    #section4signup .container p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+        width: 85%;
+    }
+
+    input[type=email] { 
+        border: 0;
+        border-radius: 25px;
+        padding: 1rem 1.5rem;
+        padding-right: 15rem;
+        font-size: 1.1rem;
+    }
+
+    input[type=submit] {
+        border: 0;
+        border-radius: 25px;
+        padding: 0.75rem 2rem;
+        background-color: #e2574c;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+        right: 1%;
+        font-size: 1.1rem;
+    }
+
+    input[type=submit]:hover {
+        background-color: #b64036
+    }
+
+/* Footer bottom */
+    footer {
+        background: #242424;
+        padding: 4rem 2rem; /* ADJUSTED THIS */
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .container {
+        color: white;
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .copyright, .phone {
+        margin-bottom: 1em;
+    }
+
+    .address {
+        color: #969696;
+    }
+
+    .social-media {
+        font-size: 1em;
+        line-height: 2;
+    }
+
+    .socialmedianame {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    footer a:hover {
+        color: #b64036;
+    }
+
+    footer i {
+        width: 2em;
+    }
+
+
+
+
+
+
+@media screen and (min-width: 600px) {  
+/* Project Typography */
+    body {
+        font-size: 16px;
+        font-family: 'Raleway Light', Arial, sans-serif;
+        color: #2d2d2d;
+        line-height: 1;    
+    }
+
+    h1, 
+    h2, /* Banner, 'Hand Crafted Styles', 'Most Loved Products', 'Sign Up for Updates'*/
+    h3 {
+        font-family: 'Playfair Display', Arial, sans-serif;
+        line-height: 1; 
+    }
+
+    .producttype,  /* also Footer class=address */
+    .price {
+        color: #969696;
+    }
+
+    .wordlinks a,
+    .carousel-cell h3 {
+        color: #e2574c;
+    }
+
+/* Top: Logo Nav Cart */
+    .top-nav {
+        background-color: white;
+        border-bottom: 1px solid #d7d7d7;
+        box-shadow: 1px 1px 6px 0px hsla(0, 0%, 39%, .25);
+        /* box-shadow: h-offset v-offset blur spread color */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .top-nav-stuff {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0.75rem;/* ADJUSTED THIS */
+        /* border: 3px dotted rgb(184, 57, 163); temporary */
+    }
+
+    .navcontainer { /* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
+        align-self: center;
+        display: inline-block;
+        vertical-align: middle;
+        order: 2;
+        flex-basis: 60%;
+    }
+
+    .logo {
+        order: 1;
+        flex-basis: 20%;
+    }
+
+    .logo img {
+        width: 125px;/* ADJUSTED THIS */
+    }
+
+    .cart {
+        text-align: right;
+        order: 3;
+        flex-basis: 20%;
+    }
+
+    .cart img {
+        width: 50px;/* ADJUSTED THIS */
+    }
+
+    .navcontainer ul {  
+        margin: 0;
+        /* padding: 0.5rem 0.5rem; *//* ADJUSTED THIS */
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .navcontainer ul li {
+        display: inline;
+    }
+
+    .navcontainer ul li a {
+        text-decoration: none;
+        padding: .2em 1em;
+        background-color: rgb(255, 255, 255);
+        font-size: 0.8rem;/* ADJUSTED THIS */
+    }
+
+    .navcontainer ul li a:hover {
+        color: #b64036;
+        background-color: white;
+    }
+
+/* Banner / Current Title  */
+        .banner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 350px; /* trial and error + feel *//* ADJUSTED THIS */
+            margin-top: 70px; /* based on header, prevent overlap *//* ADJUSTED THIS */
+            /* background flowers + girl */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl.png), url(images/flower-bkgd.jpg) ;
+            background-position: center, center 2rem, top; /* girl trial and error *//* ADJUSTED THIS */
+            background-repeat: no-repeat, no-repeat, repeat-x;
+            background-size: contain, 150px, contain; /* girl trial and error *//* ADJUSTED THIS */
+        }       
+
+        .banner h2 {
+            font-size: 1.3rem;
+            font-family: 'Railway Web' ;
+            line-height: 4rem;
+            color: white;
+            text-shadow: 2px 2px 2px grey;
+            z-index: 1;
+        }
+
+        .banner h2 span {
+            font-size: 3rem;/* ADJUSTED THIS */
+            font-family: 'Playfair Display';
+            color: white;
+        }
+
+/* Section1 Hand-Crafted Styles */
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        background: white;
+    }
+
+    .section1-stuff {
+        max-width: 720px;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    #section1 h2 span{
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    #section1 p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+/* Shop Grid flexbox */
+    #shop-grid {
+        background: green;
+    }
+
+    .shop-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* not working */
+        align-items: center; /* not working */
+        /* border: 5px darkgoldenrod dotted; temporary */
+    }
+
+    .shopgriditem {
+        border: 4px solid #fff;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .larger {
+        width: 50vw;
+        height: 25vw;
+        flex: 2 0 50%; 
+        /*flex: grow shrink basis  */      
+    }
+
+    .smaller {
+        width: 25vw;
+        height: 25vw;
+        flex: 1 0 25%;  
+    }
+
+    .shop-grid-container div:nth-child(1) {
+        border-left: none;
+    }
+
+    .shop-grid-container div:nth-child(6) {
+        border-right: none;
+    }
+
+    .shop-grid-container div:nth-child(3) {
+        border-right: none;
+    }
+
+    .shop-grid-container div:nth-child(4) {
+        border-left: none;
+    }
+
+    .mens {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/mens-category.jpg);
+        background-size: cover;
+    }
+
+    .womens {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/womens-category.jpg);
+        background-size: cover;
+    }
+    .trends {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/trends-category.jpg);
+        background-size: cover;
+    }
+    .glasses {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/glasses-category.jpg);
+        background-size: cover;
+    }
+    .sale {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/sale-category.jpg);
+        background-size: cover;
+    }
+    .bags {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/bags-category.jpg);
+        background-size: cover;
+    }
+
+
+/* Section3 Carousel  */
+    #section3carousel {
+        min-height: 650px;
+        background: white;
+        /* don't use flexbox when using flickity */
+    }
+
+    .carousel-container {
+        max-width: 1240px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    #section3carousel h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #section3carousel h2 span {
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .carousel-container .main-carousel {
+        max-width: 1240px;
+        padding-bottom: 1rem;
+    }
+
+    .carousel-cell {
+        width: 50%;
+    } /* ADD ADJUSTED THIS */
+
+    .carousel-cell h3,
+    .producttype,
+    .price {
+        margin-bottom: 1.25rem;
+    }
+
+    .carousel-cell h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        border-radius: 25px;
+        border-style: none;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1rem;   
+    }
+
+/* section4 Sign Up Newsletter */
+    #section4signup {
+        min-height: 350px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/wave-bkgd.jpg) no-repeat bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section4signup .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 720px;
+        color: white;
+    } 
+
+    #section4signup .container h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 2px grey;
+    }
+
+    .sign-up-form {
+        position: relative; 
+    }
+
+    #section4signup .container h2 span {
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    #section4signup .container h2 {
+        font-family: 'Playfair Display';
+        width: 85%;
+    }
+    #section4signup .container p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+        width: 85%;
+    }
+
+    input[type=email] { 
+        border: 0;
+        border-radius: 25px;
+        padding: 1rem 1.5rem;
+        padding-right: 15rem;
+        font-size: 1.1rem;
+    }
+
+    input[type=submit] {
+        border: 0;
+        border-radius: 25px;
+        padding: 0.75rem 2rem;
+        background-color: #e2574c;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+        right: 1%;
+        font-size: 1.1rem;
+    }
+
+    input[type=submit]:hover {
+        background-color: #b64036
+    }
+
+/* Footer bottom */
+    footer {
+        background: #242424;
+        padding: 4rem 2rem; /* ADJUSTED THIS */
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .container {
+        color: white;
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .copyright, .phone {
+        margin-bottom: 1em;
+    }
+
+    .address {
+        color: #969696;
+    }
+
+    .social-media {
+        font-size: 1em;
+        line-height: 2;
+    }
+
+    .socialmedianame {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    footer a:hover {
+        color: #b64036;
+    }
+
+    footer i {
+        width: 2em;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+/* Project Typography */
+    body {
+        font-size: 16px;
+        font-family: 'Raleway Light', Arial, sans-serif;
+        color: #2d2d2d;
+        line-height: 1;    
+    }
+
+    h1, 
+    h2, /* Banner, 'Hand Crafted Styles', 'Most Loved Products', 'Sign Up for Updates'*/
+    h3 {
+        font-family: 'Playfair Display', Arial, sans-serif;
+        line-height: 1; 
+    }
+
+    .producttype,  /* also Footer class=address */
+    .price {
+        color: #969696;
+    }
+
+    .wordlinks a,
+    .carousel-cell h3 {
+        color: #e2574c;
+    }
+
+/* Top: Logo Nav Cart */
+    .top-nav {
+        background-color: white;
+        border-bottom: 1px solid #d7d7d7;
+        box-shadow: 1px 1px 6px 0px hsla(0, 0%, 39%, .75); /* temporary 0.75, final 0.25 */
+        /* box-shadow: h-offset v-offset blur spread color */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .top-nav-stuff {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        /* border: 3px dotted rgb(184, 57, 163); temporary */
+        max-width: 1240px; /* allows div to shrink with zoom */
+    }
+
+    .navcontainer { /* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
+        align-self: center;
+        display: inline-block;
+        vertical-align: middle;
+        /* border: 3px dotted black; temporary */
+        order: 2;
+        flex-basis: 60%;
+    }
+
+    .logo {
+        order: 1;
+        flex-basis: 20%;
+    }
+
+    .logo img {
+        width: 150px;
+        /* border: 3px dotted black; temporary */
+    }
+
+    .cart {
+        text-align: right;
+        order: 3;
+        flex-basis: 20%;
+    }
+
+    .cart img {
+        width: 60px;
+        /* border: 3px dotted black; temporary */
+    }
+
+    .navcontainer ul {  
+        margin: 0;
+        padding: 10px 10px;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .navcontainer ul li {
+        display: inline;
+    }
+
+    .navcontainer ul li a {
+        text-decoration: none;
+        padding: .2rem 1rem;
+        background-color: rgb(255, 255, 255);
+        font-size: 1rem;
+    }
+
+    .navcontainer ul li a:hover {
+        color: #b64036;
+        background-color: white;
+    }
+
+/* Banner / Current Title  */
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 550px; /* trial and error + goal */
+        margin-top: 95px; /* based on header, prevent overlap */
+        /* background flowers + girl */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl.png), url(images/flower-bkgd.jpg) ;
+        background-position: center, center 4rem, top; /* girl trial and error */
+        background-repeat: no-repeat, no-repeat, repeat-x;
+        background-size: contain, 250px, contain; /* girl trial and error */
+    }       
+
+    .banner h2 {
+        font-size: 1.3rem;
+        font-family: 'Railway Web' ;
+        line-height: 4rem;
+        color: white;
+        text-shadow: 2px 2px 2px grey;
+        z-index: 1;
+    }
+
+    .banner h2 span {
+        font-size: 4rem;
+        font-family: 'Playfair Display';
+        color: white;
+    }
+
+/* Section1 Hand-Crafted Styles */
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        background: white;
+    }
+
+    .section1-stuff {
+        max-width: 720px;
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section1 h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    #section1 h2 span{
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    #section1 p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+/* Shop Grid flexbox */
+    #shop-grid {
+        background: green;
+    }
+
+    .shop-grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* not working */
+        align-items: center; /* not working */
+        /* border: 5px darkgoldenrod dotted; temporary */
+    }
+
+    .shopgriditem {
+        border: 4px solid #fff;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        color: white;
+        font-size: 2.25rem;
+        font-weight: 500;
+    }
+
+    .larger {
+        width: 50vw;
+        height: 25vw;
+        flex: 2 0 50%; 
+        /*flex: grow shrink basis  */      
+    }
+
+    .smaller {
+        width: 25vw;
+        height: 25vw;
+        flex: 1 0 25%;  
+    }
+
+    .shop-grid-container div:nth-child(1) {
+        border-left: none;
+    }
+
+    .shop-grid-container div:nth-child(6) {
+        border-right: none;
+    }
+
+    .shop-grid-container div:nth-child(3) {
+        border-right: none;
+    }
+
+    .shop-grid-container div:nth-child(4) {
+        border-left: none;
+    }
+
+    .mens {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/mens-category.jpg);
+        background-size: cover;
+    }
+
+    .womens {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/womens-category.jpg);
+        background-size: cover;
+    }
+    .trends {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/trends-category.jpg);
+        background-size: cover;
+    }
+    .glasses {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/glasses-category.jpg);
+        background-size: cover;
+    }
+    .sale {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/sale-category.jpg);
+        background-size: cover;
+    }
+    .bags {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/bags-category.jpg);
+        background-size: cover;
+    }
+
+
+/* Section3 Carousel  */
+    #section3carousel {
+        min-height: 650px;
+        background: white;
+        /* don't use flexbox when using flickity */
+    }
+
+    .carousel-container {
+        max-width: 1240px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 4rem;
+    }
+
+    #section3carousel h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #section3carousel h2 span {
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .carousel-container .main-carousel {
+        max-width: 1240px;
+        padding-bottom: 1rem;
+    }
+
+    .carousel-cell {
+        width: 25%;
+    } /* ADD ADJUSTED THIS */
+
+    .carousel-cell h3,
+    .producttype,
+    .price {
+        margin-bottom: 1.25rem;
+    }
+
+    .carousel-cell h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        border-radius: 25px;
+        border-style: none;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1rem;   
+    }
+
+/* section4 Sign Up Newsletter */
+    #section4signup {
+        min-height: 350px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/wave-bkgd.jpg) no-repeat bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        background-size: cover;
+    }
+
+    #section4signup .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 720px;
+        color: white;
+    } 
+
+    #section4signup .container h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 2px grey;
+    }
+
+    .sign-up-form {
+        position: relative; 
+    }
+
+    #section4signup .container h2 span {
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    #section4signup .container h2 {
+        font-family: 'Playfair Display';
+        width: 85%;
+    }
+    #section4signup .container p {
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+        width: 85%;
+    }
+
+    input[type=email] { 
+        border: 0;
+        border-radius: 25px;
+        padding: 1rem 1.5rem;
+        padding-right: 15rem;
+        font-size: 1.1rem;
+    }
+
+    input[type=submit] {
+        border: 0;
+        border-radius: 25px;
+        padding: 0.75rem 2rem;
+        background-color: #e2574c;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /* http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+        right: 1%;
+        font-size: 1.1rem;
+    }
+
+    input[type=submit]:hover {
+        background-color: #b64036
+    }
+
+/* Footer bottom */
+    footer {
+        background: #242424;
+        padding: 4em 10em;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .container {
+        color: white;
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 5px blue dotted; temporary */
+        max-width: 1240px;
+        width: 100%;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .copyright, .phone {
+        margin-bottom: 1em;
+    }
+
+    .address {
+        color: #969696;
+    }
+
+    .social-media {
+        font-size: 1em;
+        line-height: 2;
+    }
+
+    .socialmedianame {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    footer a:hover {
+        color: #b64036;
+    }
+
+    footer i {
+        width: 2em;
+    }
+}
