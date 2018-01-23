@@ -6,7 +6,7 @@ $('.main-carousel').flickity({
     contain: true
   });
   
-    $("#section4signup").on("submit",function(){
+    $("#newsletter").on("submit",function(){
     var emailSub;
     emailSub = $('input').val();
     console.log(emailSub);
