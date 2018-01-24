@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Project 1
 A web homepage for "Aloha Apparel Co." using HTML, CSS, and JS.
 
