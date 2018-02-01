@@ -115,7 +115,7 @@ body {
         height: 400px;
         margin-top: 101px; /* based on header, prevent overlap *//* ADJUSTED THIS */
         /* background flowers + girl */
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl.png), url(images/flower-bkgd.jpg) ;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl-compressed.png), url(images/flower-bkgd-compressed.jpg) ;
         background-position: center, center 4rem, top;
         background-repeat: no-repeat, no-repeat, repeat-x;
         background-size: contain, 150px, cover;
@@ -621,7 +621,7 @@ body {
         height: 550px; 
         margin-top: 95px; /* based on header, prevent overlap */
         /* background flowers + girl */
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl.png), url(images/flower-bkgd.jpg) ;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(images/banner-girl-compressed.png), url(images/flower-bkgd-compressed.jpg) ;
         background-position: center, center 4rem, top; /* girl trial and error */
         background-repeat: no-repeat, no-repeat, repeat-x;
         background-size: contain, 250px, contain; /* girl trial and error */
