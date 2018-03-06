@@ -172,6 +172,7 @@ body {
     #section1 p {
         text-align: center;
         font-size: 1rem;
+        font-family: 'Raleway Light';
         line-height: 2rem;
         width: 100%;
     }
@@ -347,8 +348,9 @@ body {
     }
     #newsletter .container p {
         text-align: center;
+        font-family: 'Raleway Light';
         font-size: 1.1rem;
-        line-height: 2.5rem;
+        line-height: 2rem;
         margin-bottom: 1.5rem;
         width: 85%;
     }
@@ -362,7 +364,6 @@ body {
         border-radius: 25px;
         padding: 1em 1.5rem;
         padding-right: 7.5rem;
-        font-size: 1.1rem;
         width: 100%;
     }
 
@@ -377,7 +378,6 @@ body {
         top: 50%;
         transform: translateY(-50%); /* http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
         right: 1%;
-        font-size: 1.1rem;
     }
 
     input[type=submit]:hover {
@@ -387,7 +387,7 @@ body {
 /* Footer bottom */
     footer {
         background: #242424;
-        padding: 3em 2rem;
+        padding: 3.5em 2rem;
         display: flex;
         justify-content: center;
     }
@@ -604,7 +604,7 @@ body {
     }
 
     .logo img {
-        width: 150px;
+        max-width: 150px;
     }
 
     .cart img {
