@@ -13,7 +13,7 @@ body {
 /* Project Typography */
     body {
         font-size: 14px;
-        font-family: 'Raleway Light', Arial, sans-serif;
+        font-family: 'Raleway', Arial, sans-serif;
         color: #2d2d2d;
         line-height: 1;    
     }
@@ -40,7 +40,6 @@ body {
         background-color: white;
         border-bottom: 1px solid #d7d7d7;
         box-shadow: 1px 1px 6px 0px hsla(0, 0%, 39%, .25);
-        /* box-shadow: h-offset v-offset blur spread color */
         position: fixed;
         top: 0;
         left: 0;
@@ -48,13 +47,15 @@ body {
         z-index: 9999;
     }
 
-    .top-nav-stuff {
-        width: 100%;
+    .top-nav-inner {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 0.5rem 0.75rem;
+        padding-bottom: .5rem;
+        padding-top: 1rem;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .navcontainer { /* http://css.maxdesign.com.au/listutorial/horizontal_master.htm */
@@ -62,21 +63,23 @@ body {
         display: inline-block;
         order: 3;
         flex-basis: 100%;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.25rem;
         border-top: 1px solid rgb(189, 189, 189); /* line */
     }
 
     .logo {
         order: 1;
+        padding-bottom: 0.5em;
     }
 
     .logo img {
-        width: 125px;
+        max-width: 120px;
     }
 
     .cart {
         order: 2;
+        padding-bottom: 0.5em;  
     }
 
     .cart img {
@@ -95,9 +98,9 @@ body {
 
     .navcontainer ul li a {
         text-decoration: none;
-        padding: .2em 0.5em;
+        padding: .2em 0.85em;
         background-color: rgb(255, 255, 255);
-        font-size: 0.8rem;
+        font-size: 0.rem;
     }
 
     .navcontainer ul li a:hover {
@@ -123,7 +126,7 @@ body {
 
     .banner h2 {
         font-size: 1.3rem;
-        font-family: 'Railway Web' ;
+        font-family: 'Raleway' ;
         line-height: 3rem;
         color: white;
         text-shadow: 2px 2px 2px grey;
@@ -456,7 +459,7 @@ body {
         font-size: 16px;
     }
 /* Top: Logo Nav Cart */
-    .top-nav-stuff {
+    .top-nav-inner {
         display: flex;
         flex-wrap: nowrap;
     }
@@ -595,7 +598,7 @@ body {
 
 @media screen and (min-width: 1240px) {
 /* Top: Logo Nav Cart */
-    .top-nav-stuff {
+    .top-nav-inner {
         padding: 1rem 1.5rem;
         max-width: 1240px; /* allows div to shrink with zoom */
     }
