@@ -156,7 +156,7 @@ body {
         color: white;
     }
 
-/* about Hand-Crafted Styles */
+/* About, Hand-Crafted Styles */
     #about {
         display: flex;
         flex-direction: column;
@@ -512,7 +512,7 @@ body {
             font-size: 3rem;
         }
 
-/* about Hand-Crafted Styles */
+/* About, Hand-Crafted Styles */
     .about-inner {
         padding: 4rem 2% 4rem 2%;
     }
