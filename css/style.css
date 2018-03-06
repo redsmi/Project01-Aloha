@@ -24,6 +24,9 @@ body {
         font-family: 'Playfair Display', Arial, sans-serif;
         line-height: 1; 
     }
+    h2 {
+        font-size: 2.2rem;
+    }
 
     .producttype,  /* also Footer class=address */
     .price {
@@ -70,7 +73,7 @@ body {
 
     .logo {
         order: 1;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.5rem;
     }
 
     .logo img {
@@ -79,7 +82,7 @@ body {
 
     .cart {
         order: 2;
-        padding-bottom: 0.5em;  
+        padding-bottom: 0.5rem;  
     }
 
     .cart img {
@@ -98,7 +101,7 @@ body {
 
     .navcontainer ul li a {
         text-decoration: none;
-        padding: .2em 0.85em;
+        padding: .2em 0.85rem;
         background-color: rgb(255, 255, 255);
         font-size: 0.rem;
     }
@@ -116,25 +119,23 @@ body {
         align-items: center;
         width: 100%;
         height: 400px;
-        margin-top: 101px; /* based on header, prevent overlap *//* ADJUSTED THIS */
+        margin-top: 101px; /* based on header, prevent overlap
         /* background flowers + girl */
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(../images/banner-girl-compressed.png), url(../images/flower-bkgd-compressed.jpg) ;
-        background-position: center, center 4rem, top;
+        background-position: center, center 4em, top;
         background-repeat: no-repeat, no-repeat, repeat-x;
         background-size: contain, 150px, cover;
     }       
 
     .banner h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-family: 'Raleway' ;
         line-height: 3rem;
         color: white;
-        text-shadow: 2px 2px 2px grey;
-        z-index: 1;
-    }
+        text-shadow: 1px 1px 1px grey;    }
 
     .banner h2 span {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: 'Playfair Display';
         color: white;
     }
@@ -150,7 +151,7 @@ body {
 
     .section1-about {
         max-width: 720px;
-        padding: 3.5rem 1.75rem;
+        padding: 3.5em 1.75rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -159,7 +160,6 @@ body {
 
     #section1 h2 {
         text-align: center;
-        font-size: 2rem;
         font-style: italic;
         margin-bottom: 2rem;
     }
@@ -273,7 +273,6 @@ body {
 
     #featuredproducts h2 {
         text-align: center;
-        font-size: 2.5rem;
         font-style: italic;
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -308,7 +307,7 @@ body {
         border-style: none;
         background-color: black;
         color: white;
-        padding: 0.5rem 1rem;   
+        padding: 0.5em 1rem;   
     }
 
 /* Sign Up Newsletter */
@@ -332,7 +331,6 @@ body {
 
     #newsletter .container h2 {
         text-align: center;
-        font-size: 2.5rem;
         font-style: italic;
         margin-bottom: 1.5rem;
         text-shadow: 2px 2px 2px grey;
@@ -356,20 +354,22 @@ body {
     }
 
     .sign-up-form {
-        position: relative; 
+        position: relative;
+        width: 90%;
     }
     input[type=email] { 
         border: 0;
         border-radius: 25px;
-        padding: 1rem 1.5rem;
+        padding: 1em 1.5rem;
         padding-right: 7.5rem;
         font-size: 1.1rem;
+        width: 100%;
     }
 
     input[type=submit] {
         border: 0;
         border-radius: 25px;
-        padding: 0.75rem 1rem;
+        padding: 0.75em 1rem;
         background-color: #e2574c;
         cursor: pointer;
         color: white;
@@ -387,7 +387,7 @@ body {
 /* Footer bottom */
     footer {
         background: #242424;
-        padding: 3rem 2rem;
+        padding: 3em 2rem;
         display: flex;
         justify-content: center;
     }
@@ -483,7 +483,7 @@ body {
     }
 
     .navcontainer ul li a {
-        padding: .2em 1em;
+        padding: .2em 1rem;
     }
 
 /* Banner / Current Title  */
@@ -564,17 +564,17 @@ body {
 
 /* Sign Up Newsletter */
     input[type=email] { 
-        padding: 1rem 1.5rem;
+        padding: 1em 1.5rem;
         padding-right: 15rem;
     }
 
     input[type=submit] {
-        padding: 0.75rem 2rem;
+        padding: 0.75em 2rem;
     }
 
 /* Footer bottom */
     footer {
-        padding: 4rem 2rem;
+        padding: 4em 2rem;
     }
 
     footer .container {
@@ -599,7 +599,7 @@ body {
 @media screen and (min-width: 1240px) {
 /* Top: Logo Nav Cart */
     .top-nav-inner {
-        padding: 1rem 1.5rem;
+        padding: 1em 1.5rem;
         max-width: 1240px; /* allows div to shrink with zoom */
     }
 
@@ -625,7 +625,7 @@ body {
         margin-top: 95px; /* based on header, prevent overlap */
         /* background flowers + girl */
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.20), rgba(1, 1, 1, 0.20)), url(../images/banner-girl-compressed.png), url(../images/flower-bkgd-compressed.jpg) ;
-        background-position: center, center 4rem, top; /* girl trial and error */
+        background-position: center, center 4em, top; /* girl trial and error */
         background-repeat: no-repeat, no-repeat, repeat-x;
         background-size: contain, 250px, contain; /* girl trial and error */
     }       
@@ -651,7 +651,7 @@ body {
 
 /* Footer bottom */
     footer {
-        padding: 4em 10em;
+        padding: 4em 10rem;
     }
 
     footer .container {
