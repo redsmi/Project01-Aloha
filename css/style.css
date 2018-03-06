@@ -419,7 +419,9 @@ body {
 
     .socialmedianame {
         font-size: 1rem;
+        font-family: 'Raleway Light';
         cursor: pointer;
+        display: none;
     }
 
     footer a {
@@ -438,11 +440,6 @@ body {
     footer i {
         width: 2rem;
     }
-
-    .social-media ul li span {
-        display: none;
-    }
-
 
 @media screen and (min-width: 600px) {  
 /* Project Typography */
@@ -584,7 +581,7 @@ body {
         display: block;
     }
 
-    .social-media ul li span {
+    .socialmedianame {
         display: inline;
     }
 }
