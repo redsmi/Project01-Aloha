@@ -101,6 +101,7 @@ body {
 
     .navcontainer ul li a {
         text-decoration: none;
+        text-transform: uppercase;
         padding: .2em 0.85rem;
         font-size: 0.85rem;
     }
@@ -130,7 +131,9 @@ body {
         font-family: 'Raleway' ;
         line-height: 3rem;
         color: white;
-        text-shadow: 1px 1px 1px grey;    }
+        text-shadow: 1px 1px 1px grey;
+        text-transform: uppercase; 
+    }
 
     .banner h2 span {
         font-size: 2.2rem;
@@ -188,6 +191,7 @@ body {
         color: white;
         font-size: 1.5rem;
         font-weight: 500;
+        text-transform: uppercase;
         background-size: cover;
     }
 
