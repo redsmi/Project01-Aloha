@@ -143,7 +143,7 @@ body {
 
     .banner h2 {
         font-size: 1.1rem;
-        font-family: 'Raleway' ;
+        font-family: 'Raleway', Arial, sans-serif;
         line-height: 3rem;
         color: white;
         text-shadow: 1px 1px 1px grey;
@@ -152,7 +152,7 @@ body {
 
     .banner h2 span {
         font-size: 2.2rem;
-        font-family: 'Playfair Display';
+        font-family: 'Playfair Display', Arial, sans-serif;
         color: white;
     }
 
@@ -187,7 +187,7 @@ body {
     #about p {
         text-align: center;
         font-size: 1rem;
-        font-family: 'Raleway Light';
+        font-family: 'Raleway Light', Arial, sans-serif;
         line-height: 2rem;
         width: 100%;
     }
@@ -358,12 +358,12 @@ body {
     }
 
     #newsletter .container h2 {
-        font-family: 'Playfair Display';
+        font-family: 'Playfair Display', Arial, sans-serif;
         width: 85%;
     }
     #newsletter .container p {
         text-align: center;
-        font-family: 'Raleway Light';
+        font-family: 'Raleway Light', Arial, sans-serif;
         font-size: 1.1rem;
         line-height: 2rem;
         margin-bottom: 1.5rem;
@@ -409,7 +409,7 @@ body {
 
     footer .container {
         color: white;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Playfair Display', Arial, sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -443,7 +443,7 @@ body {
 
     .socialmedianame {
         font-size: 1rem;
-        font-family: 'Raleway Light';
+        font-family: 'Raleway Light', Arial, sans-serif;
         cursor: pointer;
         display: none;
     }
